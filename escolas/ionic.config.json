@@ -1,0 +1,7 @@
+{
+  "name": "VLAB",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
