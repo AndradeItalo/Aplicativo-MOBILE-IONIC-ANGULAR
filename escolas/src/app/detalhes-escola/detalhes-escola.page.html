@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="custom-title">Detalhes da Escola</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngIf="escola">
+    <ion-card-header>
+      <ion-card-title class="custom-card-title">{{ escola.noEntidade }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list lines="full">
+        <ng-container *ngFor="let categoria of categoriasDeInformacoes">
+          <ion-list-header>
+            <ion-label>{{ categoria.titulo }}</ion-label>
+          </ion-list-header>
+          <ion-item *ngFor="let item of categoria.detalhes">
+            <ion-label>{{ item.label }}:</ion-label>
+            <ion-note slot="end">{{ escola[item.valor] }}</ion-note>
+          </ion-item>
+        </ng-container>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

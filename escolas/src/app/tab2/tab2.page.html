@@ -1,17 +1,26 @@
-<ion-header [translucent]="true">
+<ion-header class="custom-header">
   <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+    <ion-title class="custom-title">Escolas Favoritas</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-xs="12" *ngFor="let escola of escolasFavoritas">
+        <ion-card class="custom-card">
+          <ion-card-header>
+            <ion-card-title>{{ escola.noEntidade }}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Código INEP - {{escola.coEntidade}}
+          </ion-card-content>
+          <ion-button color="danger" (click)="removerFavoritos(escola.coEntidade)">
+            Remover dos Favoritos
+          </ion-button>
+          
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
