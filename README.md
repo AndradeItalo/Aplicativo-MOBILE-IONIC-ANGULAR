@@ -2,8 +2,7 @@
 
 ### Video apresentando o Aplicativo: https://youtu.be/3Cml0K8Z8FM
 
-### Aplicativo Mobile em Ionic Capacitor, desenvolvido como parte do Desafio VLAB, o projeto foi criado utilizando as tecnologias Ionic, Capacitor e Angular e inclui funcionalidades inovadoras destinadas a melhorar a 
-### experiência do usuário no contexto educacional.
+### Aplicativo Mobile em Ionic Capacitor, desenvolvido como parte do Desafio VLAB, o projeto foi criado utilizando as tecnologias Ionic, Capacitor e Angular e inclui funcionalidades inovadoras destinadas a melhorar a experiência do usuário no contexto educacional.
 
 # 🔍 Funcionalidades Apresentadas 🔍
 ## Busca de escolas por nome e código INEP utilizando API. 
