@@ -7,11 +7,11 @@ import { ToastController } from '@ionic/angular';
 import { FavoritosService } from '../favoritos.service';
 
 @Component({
-  selector: 'app-tab1',
-  templateUrl: 'tab1.page.html',
-  styleUrls: ['tab1.page.scss']
+  selector: 'app-lista-escolas',
+  templateUrl: 'listaEscolas.page.html',
+  styleUrls: ['listaEscolas.page.scss']
 })
-export class Tab1Page implements OnInit {
+export class ListaEscolasPage implements OnInit {
   escolas: any[] = []; // Array para armazenar as escolas 
   escolasFiltradas: any[] = []; // Escolas filtradas
   filtroEscola: string = '';

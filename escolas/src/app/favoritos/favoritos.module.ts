@@ -2,11 +2,10 @@ import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Tab1Page } from './tab1.page';
+import { FavoritosPage } from './favoritos.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
-import { HttpClientModule } from '@angular/common/http';
 
-import { Tab1PageRoutingModule } from './tab1-routing.module';
+import { FavoritosPageRoutingModule } from './favoritos-routing.module';
 
 @NgModule({
   imports: [
@@ -14,9 +13,8 @@ import { Tab1PageRoutingModule } from './tab1-routing.module';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    HttpClientModule,
-    Tab1PageRoutingModule
+    FavoritosPageRoutingModule
   ],
-  declarations: [Tab1Page]
+  declarations: [FavoritosPage]
 })
-export class Tab1PageModule {}
+export class FavoritosPageModule {}

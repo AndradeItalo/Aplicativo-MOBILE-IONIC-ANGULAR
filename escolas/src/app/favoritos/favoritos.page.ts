@@ -4,11 +4,11 @@ import { HttpClient } from '@angular/common/http';
 import { ViewDidEnter } from '@ionic/angular';
 
 @Component({
-  selector: 'app-tab2',
-  templateUrl: 'tab2.page.html',
-  styleUrls: ['tab2.page.scss']
+  selector: 'app-favoritos',
+  templateUrl: 'favoritos.page.html',
+  styleUrls: ['favoritos.page.scss']
 })
-export class Tab2Page implements OnInit, ViewDidEnter {
+export class FavoritosPage implements OnInit, ViewDidEnter {
   escolasFavoritas: any[] = []; // Array para armazenar as escolas favoritas
 
   constructor(private http: HttpClient) {}
