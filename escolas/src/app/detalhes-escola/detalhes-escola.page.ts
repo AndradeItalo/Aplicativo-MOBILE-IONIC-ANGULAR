@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { EscolaDataService } from '../escola-data.service';
-import { HttpClient } from '@angular/common/http';
 
 interface MapeamentoDeRotulos {
   [key: string]: string;
@@ -13,9 +12,10 @@ interface MapeamentoDeRotulos {
 })
 
 export class DetalhesEscolaPage implements OnInit {
-  escola: any;
-  escolaDetalhes: any;
+  escola: any; // Armazena os detalhes da escola selecionada.'
+  escolaDetalhes: any; // Armazena os detalhes da escola formatados para exibição.
 
+  // Define os grupos de informações
   categoriasDeInformacoes: any[] = [
     {
       titulo: 'Informações Gerais',
@@ -63,6 +63,8 @@ export class DetalhesEscolaPage implements OnInit {
   constructor(private escolaDataService: EscolaDataService) {}
 
   ngOnInit() {
+    // Quando os detalhes de uma escola são recebidos, eles são armazenados
+    // na variável 'escola' e formatados para exibição.
     this.escolaDataService.escolaDetalhes.subscribe(detalhes => {
       if (detalhes) {
         this.escola = detalhes;
@@ -71,6 +73,7 @@ export class DetalhesEscolaPage implements OnInit {
     });
   }
 
+    // Trasnforma as chaves que estão na API para um formato mais legível
   formatarDetalhes(detalhes: any) {
     const mapeamentoDeRotulos: MapeamentoDeRotulos = {
       'nuanocenso': 'Ano do Censo',
@@ -106,6 +109,7 @@ export class DetalhesEscolaPage implements OnInit {
     return detalhesFormatados;
   }
 
+  // Método para obter as chaves do objeto
   objectKeys(obj: any): string[] {
     return Object.keys(obj);
   }

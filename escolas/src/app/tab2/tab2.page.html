@@ -7,9 +7,9 @@
   </ion-toolbar>
 </ion-header>
 
-
 <ion-content>
-  <ion-grid>
+  <!-- Exibe a lista de escolas favoritas se existirem -->
+  <ion-grid *ngIf="escolasFavoritas.length; else semFavoritos">
     <ion-row>
       <ion-col size-xs="12" *ngFor="let escola of escolasFavoritas">
         <ion-card class="custom-card">
@@ -17,14 +17,20 @@
             <ion-card-title><b>{{ escola.noEntidade }}</b></ion-card-title>
           </ion-card-header>
           <ion-card-content>
-            Código INEP - {{escola.coEntidade}}
+            Código INEP - {{ escola.coEntidade }}
           </ion-card-content>
           <ion-button color="danger" (click)="removerFavoritos(escola.coEntidade)">
             Remover dos Favoritos
           </ion-button>
-          
         </ion-card>
       </ion-col>
     </ion-row>
   </ion-grid>
+
+  <!-- Template para quando não houver escolas favoritas -->
+  <ng-template #semFavoritos>
+    <div class="mensagem-vazia">
+      <p>Não há escolas favoritas no momento.</p>
+    </div>
+  </ng-template>
 </ion-content>

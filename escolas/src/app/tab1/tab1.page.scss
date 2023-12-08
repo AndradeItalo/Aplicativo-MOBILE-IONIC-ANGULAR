@@ -6,23 +6,13 @@
 }
 
 ion-icon[name="school"] {
-  color: white; /* Exemplo: mudar a cor do ícone */
-  font-size: 24px; /* Exemplo: ajustar o tamanho do ícone */
-  margin-left: 10px; /* Exemplo: adicionar margem à direita do ícone */
+  color: white; 
+  font-size: 24px;
+  margin-left: 10px; 
 }
-
-.custom-header {
-    min-height: 50px; /* Defina a altura desejada */
-  }
-
 
 .custom-padding ion-item {
   align-items: center; /* Alinha todos os elementos verticalmente */
-}
-  
-
-.card-title {
-  font-size: 1em; // Ajuste o tamanho da fonte conforme necessário
 }
 
 ion-card {
@@ -30,31 +20,27 @@ ion-card {
   margin: 3px; // Espaçamento entre os cards
 }
 
-
 .custom-card {
-  height: 140px;
-  width: 95%;
+  height: 140px; 
+  width: 95%; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   ion-card-header{
     overflow: hidden;
-    margin-bottom: 0; /* Remove a margem abaixo do conteúdo do card */
-    margin-top: 0px;
   }
   
   ion-card-content {
     overflow: hidden;
-    margin-bottom: 0; /* Remove a margem abaixo do conteúdo do card */
     margin-top: -40px;
   }
 
   ion-button {
     width: auto; /* Mantém a largura do botão ajustada ao conteúdo */
-    align-self: center; /* Centraliza o botão no card */
-    margin-top: -30px; /* Puxa o botão ligeiramente para cima */
-    margin-bottom: 13px; /* Pequena margem na parte inferior para evitar colar no fim do card */
+    align-self: center; 
+    margin-top: -30px; 
+    margin-bottom: 13px; 
   }
 }
 

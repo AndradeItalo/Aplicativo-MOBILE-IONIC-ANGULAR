@@ -16,11 +16,11 @@
       <ion-list lines="full">
         <ng-container *ngFor="let categoria of categoriasDeInformacoes">
           <ion-list-header>
-            <ion-title class="custom-label-title"><b>{{ categoria.titulo }}</b></ion-title>
+            <h2 class="custom-h2"><b>{{ categoria.titulo }}</b></h2>
           </ion-list-header>
           <ion-item *ngFor="let item of categoria.detalhes">
             <ion-label>{{ item.label }}:</ion-label>
-            <ion-note slot="end">{{ escola[item.valor] }}</ion-note>
+            <ion-note slot="end">{{ escola[item.valor] ?? 'Não disponível' }}</ion-note>
           </ion-item>
         </ng-container>
       </ion-list>
