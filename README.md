@@ -16,5 +16,5 @@
 ### Capacitor 
 
 # 💡 Motivação e Aprendizados 💡
-### Participar do Desafio VLAB não foi apenas uma busca por uma oportunidade profissional, mas também uma chance de aprofundar meus conhecimentos em tecnologias emergentes. Vejo a VLAB como um ambiente ideal para contribuir ### e crescer, cercado por inovação e talento.
+### Participar do Desafio VLAB não foi apenas uma busca por uma oportunidade profissional, mas também uma chance de aprofundar meus conhecimentos em tecnologias emergentes. Vejo a VLAB como um ambiente ideal para contribuir e crescer, cercado por inovação e talento.
 ### Estou empolgado com a possibilidade de integrar a equipe VLAB e continuar evoluindo na área que escolhi e amo.
