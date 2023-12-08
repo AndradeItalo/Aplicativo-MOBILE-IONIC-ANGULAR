@@ -16,3 +16,6 @@ Capacitor
 
 💡 Motivação e Aprendizados 💡
 Eu gosto muito da area de desenvolvedor, é a área que escolhi seguir profissionalmente, fiz o desafio visando o ingresso na VLAB, além disso, vi uma ótima oportunidade para aprender novas tecnologias.
+
+Video apresentando o Aplicativo:
+https://youtu.be/3Cml0K8Z8FM
