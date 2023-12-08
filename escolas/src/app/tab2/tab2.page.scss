@@ -3,48 +3,55 @@
   }
 
 .custom-title {
-    text-align: center;
-    font-size: 22px;
-    height: 60px;
+  text-align: center;
+  font-size: 22px;
+  height: 60px;
+  margin-left: -55px;
   }
 
 ion-toolbar{
     height: 60px;
 }
   
+ion-icon[name="heart"] {
+  color: white; /* Exemplo: mudar a cor do ícone */
+  font-size: 24px; /* Exemplo: ajustar o tamanho do ícone */
+  margin-left: 10px;
+}
 
 ion-card {
     --ion-card-content-padding: 10px; // Reduz o padding dentro do card
     margin: 3px; // Espaçamento entre os cards
   }
   
+
 .custom-card {
-    height: 140px;
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  height: 140px;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  ion-card-header{
+    overflow: hidden;
+    margin-bottom: 0; /* Remove a margem abaixo do conteúdo do card */
+    margin-top: 0px;
+  }
   
-    ion-card-header{
-      overflow: hidden;
-      margin-bottom: 0; /* Remove a margem abaixo do conteúdo do card */
-      margin-top: 0px;
-    }
-    
-    ion-card-content {
-      overflow: hidden;
-      margin-bottom: 0; /* Remove a margem abaixo do conteúdo do card */
-      margin-top: -30px;
-    }
-  
-    ion-button {
-      width: auto; /* Mantém a largura do botão ajustada ao conteúdo */
-      align-self: center; /* Centraliza o botão no card */
-      margin-top: -30px; /* Puxa o botão ligeiramente para cima */
-      margin-bottom: 13px; /* Pequena margem na parte inferior para evitar colar no fim do card */
-    }
+  ion-card-content {
+    overflow: hidden;
+    margin-bottom: 0; /* Remove a margem abaixo do conteúdo do card */
+    margin-top: -40px;
+  }
+
+  ion-button {
+    width: auto; /* Mantém a largura do botão ajustada ao conteúdo */
+    align-self: center; /* Centraliza o botão no card */
+    margin-top: -30px; /* Puxa o botão ligeiramente para cima */
+    margin-bottom: 20px; /* Pequena margem na parte inferior para evitar colar no fim do card */
+  }
 }
-  
+
 ion-card-title {
     font-size: 15px;
     margin-top: 0px;

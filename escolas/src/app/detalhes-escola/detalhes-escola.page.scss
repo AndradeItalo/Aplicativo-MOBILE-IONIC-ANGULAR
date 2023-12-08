@@ -2,6 +2,7 @@
     text-align: center;
     font-size: 22px;
     height: 60px;
+    margin-left: -55px;
   }
 
 ion-toolbar{
@@ -10,9 +11,17 @@ ion-toolbar{
 
 .custom-card-title{
     font-size: 20px;
+    margin-bottom: -10px;
+    text-align: center;
+    
 }
 
 ion-back-button{
     height: 60px;
 }
 
+
+.custom-label-title{
+  margin-top: 0px;
+  text-align: center;
+}

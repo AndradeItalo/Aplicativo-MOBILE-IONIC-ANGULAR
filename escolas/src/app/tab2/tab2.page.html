@@ -1,8 +1,12 @@
 <ion-header class="custom-header">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-icon name="heart"></ion-icon>
+    </ion-buttons>
     <ion-title class="custom-title">Escolas Favoritas</ion-title>
   </ion-toolbar>
 </ion-header>
+
 
 <ion-content>
   <ion-grid>
@@ -10,7 +14,7 @@
       <ion-col size-xs="12" *ngFor="let escola of escolasFavoritas">
         <ion-card class="custom-card">
           <ion-card-header>
-            <ion-card-title>{{ escola.noEntidade }}</ion-card-title>
+            <ion-card-title><b>{{ escola.noEntidade }}</b></ion-card-title>
           </ion-card-header>
           <ion-card-content>
             Código INEP - {{escola.coEntidade}}

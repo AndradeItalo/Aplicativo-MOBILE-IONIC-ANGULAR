@@ -14,7 +14,8 @@ export class Tab1Page implements OnInit {
   escolas: any[] = [];
   escolasFiltradas: any[] = [];
   filtroEscola: string = '';
-
+  darkMode = false;
+  
 
   constructor(private http: HttpClient, private escolaDataService: EscolaDataService, private router: Router, private toastController: ToastController) {}
 
@@ -30,7 +31,7 @@ export class Tab1Page implements OnInit {
         this.escolasFiltradas = data; // Inicializando escolasFiltradas com todas as escolas
       });
   }
-
+  
   async marcarComoFavorita(escolaId: string, event: Event) {
     event.stopPropagation();
   
@@ -53,21 +54,23 @@ export class Tab1Page implements OnInit {
     const toast = await this.toastController.create({
       message: message,
       duration: 3000,
-      cssClass: 'toast' //class do toast
+      cssClass: 'toast', //class do toast
+      position: 'middle'
     });
     toast.present();
   }
 
-  filtrarEscolas() {
-    if (!this.filtroEscola) { // Filtro vazio
+  filtrarEscolas(valorBusca: string) {
+    if (!valorBusca) { // Filtro vazio
       this.escolasFiltradas = this.escolas; // Se o filtro estiver vazio, mostra todas as escolas
     } else {
       this.escolasFiltradas = this.escolas.filter(escola => 
-        escola.noEntidade.toLowerCase().includes(this.filtroEscola.toLowerCase()) ||
-        escola.coEntidade.toString().includes(this.filtroEscola)
+        escola.noEntidade.toLowerCase().includes(valorBusca.toLowerCase()) ||
+        escola.coEntidade.toString().includes(valorBusca)
       );
     }
-  }  
+  }
+  
 
   limparFiltro() {
     this.filtroEscola = ''; // Limpa o campo de filtro

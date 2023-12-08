@@ -2,10 +2,13 @@
   text-align: center;
   font-size: 22px;
   height: 60px;
+  margin-left: -55px;
 }
 
-ion-toolbar{
-  height: 60px;
+ion-icon[name="school"] {
+  color: white; /* Exemplo: mudar a cor do ícone */
+  font-size: 24px; /* Exemplo: ajustar o tamanho do ícone */
+  margin-left: 10px; /* Exemplo: adicionar margem à direita do ícone */
 }
 
 .custom-header {
@@ -13,9 +16,10 @@ ion-toolbar{
   }
 
 
-.custom-padding {
-    padding-top: 50px; /* Ajuste a altura conforme necessário */
+.custom-padding ion-item {
+  align-items: center; /* Alinha todos os elementos verticalmente */
 }
+  
 
 .card-title {
   font-size: 1em; // Ajuste o tamanho da fonte conforme necessário
@@ -25,6 +29,7 @@ ion-card {
   --ion-card-content-padding: 10px; // Reduz o padding dentro do card
   margin: 3px; // Espaçamento entre os cards
 }
+
 
 .custom-card {
   height: 140px;
@@ -42,7 +47,7 @@ ion-card {
   ion-card-content {
     overflow: hidden;
     margin-bottom: 0; /* Remove a margem abaixo do conteúdo do card */
-    margin-top: -30px;
+    margin-top: -40px;
   }
 
   ion-button {

@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/tab1"></ion-back-button>
     </ion-buttons>
@@ -10,13 +10,13 @@
 <ion-content>
   <ion-card *ngIf="escola">
     <ion-card-header>
-      <ion-card-title class="custom-card-title">{{ escola.noEntidade }}</ion-card-title>
+      <ion-card-title class="custom-card-title"><b>{{ escola.noEntidade }}</b></ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <ion-list lines="full">
         <ng-container *ngFor="let categoria of categoriasDeInformacoes">
           <ion-list-header>
-            <ion-label>{{ categoria.titulo }}</ion-label>
+            <ion-title class="custom-label-title"><b>{{ categoria.titulo }}</b></ion-title>
           </ion-list-header>
           <ion-item *ngFor="let item of categoria.detalhes">
             <ion-label>{{ item.label }}:</ion-label>
